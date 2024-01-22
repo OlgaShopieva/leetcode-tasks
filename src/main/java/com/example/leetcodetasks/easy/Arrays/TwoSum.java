@@ -19,7 +19,7 @@ import java.util.Map;
 
 public class TwoSum {
     public static void main(String[] args) {
-       int[] nums = new int[] {2,7,11,15};
+       int[] nums = new int[] {12,7,11,2};
        TwoSum sum = new TwoSum();
 
         System.out.println(Arrays.toString(sum.twoSum(nums, 9)));
