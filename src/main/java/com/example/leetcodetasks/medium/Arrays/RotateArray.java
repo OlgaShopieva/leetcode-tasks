@@ -1,4 +1,4 @@
-package com.example.leetcodetasks.easy.Arrays;
+package com.example.leetcodetasks.medium.Arrays;
 
 public class RotateArray {
     public void rotate(int[] nums, int k) {
