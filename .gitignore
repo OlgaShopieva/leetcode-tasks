@@ -1,0 +1,12 @@
+# Ignore compiled class files
+*.class
+
+# Other common ignores
+*.log
+*.tmp
+*.swp
+.iml
+
+# Ignore IDE specific files
+.idea/
+.vscode/
