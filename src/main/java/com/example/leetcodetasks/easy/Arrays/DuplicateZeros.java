@@ -1,4 +1,6 @@
 package com.example.leetcodetasks.easy.Arrays;
+import java.util.Arrays;
+
 /*
 Given a fixed-length integer array arr, duplicate each occurrence of zero, shifting the remaining elements to the right.
 
@@ -10,7 +12,6 @@ Output: [1,0,0,2,3,0,0,4]
 Explanation: After calling your function, the input array is modified to: [1,0,0,2,3,0,0,4]
  */
 
-import java.util.Arrays;
 
 public class DuplicateZeros {
     public static void main(String[] args) {

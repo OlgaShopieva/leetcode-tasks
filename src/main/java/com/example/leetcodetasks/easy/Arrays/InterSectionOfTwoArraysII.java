@@ -1,6 +1,6 @@
 package com.example.leetcodetasks.easy.Arrays;
 
-import java.util.Arrays;
+import java.util.*;
 
 public class InterSectionOfTwoArraysII {
 

@@ -1,4 +1,4 @@
-package com.example.leetcodetasks.easy.Arrays;
+package com.example.leetcodetasks.easy.List;
 
 public class RemoveDuplicatesFromSortedList {
 
