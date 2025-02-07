@@ -3,7 +3,7 @@ package com.example.leetcodetasks.search.BinarySearch;
 public class BinarySearch {
     public static void main(String[] args) {
         int[] arr = new int[]{1, 2, 3, 4, 10, 12, 13, 15, 16};
-        System.out.println(findNumber(arr, 9));
+        System.out.println(findNumber(arr, 10));
 
     }
 
