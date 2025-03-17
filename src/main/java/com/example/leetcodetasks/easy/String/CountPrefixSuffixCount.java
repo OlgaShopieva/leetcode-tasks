@@ -20,27 +20,17 @@ package com.example.leetcodetasks.easy.String;
  */
 public class CountPrefixSuffixCount {
     public static void main(String[] args) {
-        String[] words = new String[]{"a","aba","ababa","aa"};
+        String[] words = new String[]{"a", "aba", "ababa", "aa"};
         System.out.println(countPrefixSuffixPairs(words));
     }
 
     public static int countPrefixSuffixPairs(String[] words) {
         int count = 0;
-        int n = words.length;
-        for(int i = 0; i < n - 1; i++) {
-            for(int j = i+1; j < n; j++) {
-                if(isPrefixAndSuffix(words[i], words[j])) {
-                    count++;
-                }
+        for (int i = 0; i < words.length; i++) {
+            for (int j = i + 1; j < words.length; j++) {
+                if (words[j].startsWith(words[i]) && words[j].endsWith(words[i])) count++;
             }
         }
         return count;
-    }
-
-    private static boolean isPrefixAndSuffix(String str1, String str2) {
-        if(str1.length() > str2.length()) return false;
-        String prefix = str2.substring(0, str1.length());
-        String suffix = str2.substring(str2.length() - str1.length());
-        return str1.equals(prefix) && str1.equals(suffix);
     }
 }
