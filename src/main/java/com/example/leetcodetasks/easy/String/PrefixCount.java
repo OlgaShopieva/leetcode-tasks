@@ -15,13 +15,7 @@ package com.example.leetcodetasks.easy.String;
  */
 public class PrefixCount {
 
-    public static void main(String[] args) {
-      String[] words = new String[]{"pay","attention","practice","attend"};
-      String pref = "at";
-      System.out.println(prefixCount(words, pref));
-    }
-
-    public static int prefixCount(String[] words, String pref) {
+    public int prefixCount(String[] words, String pref) {
         int count = 0;
         int n = pref.length();
         for(String s: words) {

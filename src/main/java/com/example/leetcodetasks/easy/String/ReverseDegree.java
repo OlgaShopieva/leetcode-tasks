@@ -4,13 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ReverseDegree {
-    public static void main(String[] args) {
-     String abc = "abc";
-        System.out.println(reverseDegree(abc));
-    }
 
-
-    public static int reverseDegree(String s) {
+    public  int reverseDegree(String s) {
         Map<Character, Integer> map = new HashMap<>();
         for(char ch = 'a'; ch <= 'z'; ch++) {
             map.put(ch, 26 - (ch - 'a'));

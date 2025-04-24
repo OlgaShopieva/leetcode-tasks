@@ -18,12 +18,7 @@ package com.example.leetcodetasks.easy.String;
  */
 public class RemoveOutermostParentheses {
 
-    public static void main(String[] args) {
-        String s = "(()())(())";
-        System.out.println(removeOuterParentheses(s));
-    }
-
-    public static String removeOuterParentheses(String s) {
+    public String removeOuterParentheses(String s) {
         int balancer = 0;
         int start = 0;
         StringBuilder sb = new StringBuilder();

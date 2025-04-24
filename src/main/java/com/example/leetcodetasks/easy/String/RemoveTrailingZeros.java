@@ -12,12 +12,8 @@ package com.example.leetcodetasks.easy.String;
  * Explanation: Integer "123" has no trailing zeros, we return integer "123".
  */
 public class RemoveTrailingZeros {
-    public static void main(String[] args) {
-        String num = "51230100";
-        System.out.println(removeTrailingZeros(num));
-    }
 
-    public static String removeTrailingZeros(String num) {
+    public String removeTrailingZeros(String num) {
         int n = num.length();
         for(int i = n - 1; i >= 0; i--) {
             if(num.charAt(i) != '0') {

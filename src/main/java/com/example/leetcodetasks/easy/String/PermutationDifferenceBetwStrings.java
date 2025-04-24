@@ -19,12 +19,8 @@ import static java.lang.Math.abs;
  * That is, the permutation difference between s and t is equal to |0 - 1| + |1 - 0| + |2 - 2| = 2.
  */
 public class PermutationDifferenceBetwStrings {
-    public static void main(String[] args) {
-        String s = "abc", t = "bac";
-        System.out.println(findPermutationDifference(s, t));
-    }
 
-    public static int findPermutationDifference(String s, String t) {
+    public int findPermutationDifference(String s, String t) {
         char[] sArray = s.toCharArray();
         int sum = 0;
         for (int i = 0; i < sArray.length; i++) {

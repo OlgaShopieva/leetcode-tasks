@@ -15,13 +15,8 @@ import java.util.Arrays;
  * Output: ["h","a","n","n","a","H"]
  */
 public class ReverseString {
-    public static void main(String[] args) {
-        char[] s = new char[]{'h','e','l','l','o'};
-        reverseString(s);
-        System.out.println(Arrays.toString(s));
-    }
 
-    private static void reverseString(char[] s) {
+    private void reverseString(char[] s) {
         if (s == null || s.length == 0) {
             return;
         }

@@ -20,13 +20,7 @@ import java.util.Map;
  */
 public class ShuffleString {
 
-    public static void main(String[] args) {
-        String s = "codeleet";
-        int[] indices = new int[]{4,5,6,7,0,2,1,3};
-        System.out.println(restoreString(s, indices));
-    }
-
-    public static String restoreString(String s, int[] indices) {
+    public  String restoreString(String s, int[] indices) {
         char[] c = new char[s.length()];
 
         for (int i = 0; i< s.length(); i++){

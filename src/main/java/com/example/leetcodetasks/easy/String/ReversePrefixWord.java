@@ -12,13 +12,7 @@ package com.example.leetcodetasks.easy.String;
  */
 public class ReversePrefixWord {
 
-    public static void main(String[] args) {
-        String word = "abcdefd";
-        char ch = 'd';
-        System.out.println(reversePrefix(word, ch));
-    }
-
-    public static String reversePrefix(String word, char ch) {
+    public  String reversePrefix(String word, char ch) {
         char[] charArray = word.toCharArray();
         for (int j = 0; j < word.length(); j++) {
             if (word.charAt(j) == ch) {

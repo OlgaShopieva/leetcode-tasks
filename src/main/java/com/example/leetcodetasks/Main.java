@@ -1,12 +1,13 @@
 package com.example.leetcodetasks;
 
-import com.example.leetcodetasks.easy.String.CheckIfPangram;
-import com.example.leetcodetasks.easy.String.FaultyKeyboard;
+import com.example.leetcodetasks.easy.ClearDigits;
+import com.example.leetcodetasks.easy.String.ReplaceAllDigitsWithCharacters;
 
 public class Main {
     public static void main(String[] args) {
-        String sentence = "thequickbrownfoxjumpsoverthelazydog";
-        CheckIfPangram cp = new CheckIfPangram();
-        System.out.println(cp.checkIfPangram(sentence));
+       String s = "a1c1e1";
+        ReplaceAllDigitsWithCharacters replace = new ReplaceAllDigitsWithCharacters();
+        System.out.println(replace.replaceDigits(s));
+
     }
 }
