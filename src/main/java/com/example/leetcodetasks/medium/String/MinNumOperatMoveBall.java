@@ -67,6 +67,46 @@ public class MinNumOperatMoveBall {
         return res;
     }
 
-    //method2 fast
+    //method2
 
+    public static int[] minOperations2(String boxes) {
+        int n = boxes.length();
+        int[] answer = new int[n];
+
+        for(int i = 0; i < n; i++) {
+            int operations = 0;
+            for(int j = 0; j < n; j++) {
+                if(boxes.charAt(j) == '1') {
+                    operations += Math.abs(i -j);
+                }
+            }
+            answer[i] = operations;
+        }
+        return answer;
+    }
+
+    //Prefix Sum method
+    public int[] minOperations3(String boxes) {
+        int n = boxes.length();
+        int[] answer = new int[n];
+
+        int ballsToLeft = 0, movesToLeft = 0;
+        int ballsToRight = 0, movesToRight = 0;
+
+        // Single pass: calculate moves from both left and right
+        for (int i = 0; i < n; i++) {
+            // Left pass
+            answer[i] += movesToLeft;
+            ballsToLeft += Character.getNumericValue(boxes.charAt(i));
+            movesToLeft += ballsToLeft;
+
+            // Right pass
+            int j = n - 1 - i;
+            answer[j] += movesToRight;
+            ballsToRight += Character.getNumericValue(boxes.charAt(j));
+            movesToRight += ballsToRight;
+        }
+
+        return answer;
+    }
 }
