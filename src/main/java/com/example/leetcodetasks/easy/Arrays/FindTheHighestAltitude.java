@@ -46,9 +46,9 @@ public class FindTheHighestAltitude {
     public static int largestAltitude2(int[] gain) {
         int altitude = 0;
         int max = 0;
-        for ( int i = 0; i < gain.length ; i++){
-            altitude = altitude + gain[i];
-            if(altitude > max){
+        for (int j : gain) {
+            altitude = altitude + j;
+            if (altitude > max) {
                 max = altitude;
             }
 
