@@ -14,11 +14,6 @@ Output: 1
  */
 
 public class SearchInsertPosition {
-    public static void main(String[] args) {
-        int[] array = new int[]{1, 3, 5, 6};
-        System.out.println(searchInsert(array, 2));
-
-    }
 
     public static int searchInsert(int[] nums, int target) {
         int left = 0;
